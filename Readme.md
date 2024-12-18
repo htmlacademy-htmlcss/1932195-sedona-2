@@ -2,7 +2,7 @@
 
 * Студент: [Мария Курильчик](https://up.htmlacademy.ru/htmlcss-individual/2/user/1932195).
 * Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
-
+* Сайт: [Мой проект Седона](https://maremianacomp.github.io/1932195-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
