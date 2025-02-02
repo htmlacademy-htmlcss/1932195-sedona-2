@@ -8,7 +8,7 @@
 
   <body>
     <header class="page-header">
-      <a class="navigation-logo" href="/">
+      <a class="navigation-logo" href="/" aria-current="page">
         <img class="page-header-logo" src="img/logo.svg" width="140" height="70" alt="Логотип сайта городка Седона">
       </a>
       <nav class="navigation">
@@ -17,7 +17,7 @@
             <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -32,29 +32,28 @@
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-user-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="likes-number">Количество выбранных отелей: 12</span>
             </a>
           </li>
           <li class="navigation-user-item">
-            <!-- <a class="navigation-link" href="#">Хочу сюда!</a> -->
-            <button class="button-basic button-small" type="button">
-              Хочу сюда!
-            </button>
+            <a class="navigation-user-link navigation-user-link-here" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
-      <section class="welcom">
+      <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <img class="welcome" src="index-background.png" width="1200" height="485" alt="Скалы у Седоны">
-        <div class="divider"></div>
+        <!-- <img class="hero-image" src="images/index-background.png" width="1200" height="485" alt="Скальный пейзаж у городка Седона"> -->
+        <img class="welcome" src="images/welcome.svg" width="458" height="352"
+          alt="WELCOME to the gorgeous SEDONA “Because the Grand Canyon sucks!”">
       </section>
       <section class="arizona">
         <h2>
           Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!
         </h2>
-        <p class="caption-heading-two">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="text-basic">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -98,7 +97,7 @@
           Приезжайте в Седону отдохнуть<br />
           в комфорте и уюте!
         </h2>
-        <p class="caption-heading-two">Опытный персонал и качественное обслуживание!</p>
+        <p class="text-basic">Опытный персонал и качественное обслуживание!</p>
       </section>
       <section class="service">
         <h2 class="visually-hidden">Сервис</h2>
@@ -125,17 +124,17 @@
       </section>
       <section class="interest">
         <h2>Заинтересовались?</h2>
-        <p class="caption-heading-two">
+        <p class="text-basic">
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="button-basic button-big" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <button class="button-basic button-big" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="subscription subscription-main-img">
         <h2>Подпишитесь на рассылку</h2>
-        <p class="caption-heading-two">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="text-basic text-basic-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="newsletter-email">Email</label>
+          <label for="newsletter-email"></label>
           <input class="field" placeholder="Ваш e-mail" type="email" id="newsletter-email" name="newsletter-email"
             required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
@@ -144,25 +143,25 @@
     </main>
     <footer class="page-footer">
       <!-- Подвал сайта -->
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
+      <ul class="social-list">
+        <li class="social-item">
           <a class="button" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="social-item">
           <a class="button" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="social-item">
           <a class="button" href="https://youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
       <address>
-        <a class="phone" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
+        <a class="contact" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
       </address>
       <a href="https://htmlacademy.ru">
         <img src="htmlacademy.svg" width="114.9" height="32.9" alt="Кекс приглашает на курсы" />
