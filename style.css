@@ -1,0 +1,15 @@
+.social-icon {
+  color: #83b3d3;
+}
+
+.social-icon:hover {
+  color: #68a2ca;
+}
+
+.social-icon:focus {
+  color: #68a2ca;
+}
+
+.social-icon:active {
+  color: rgba(104, 162, 202, 0.3);
+}
