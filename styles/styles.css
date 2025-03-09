@@ -600,6 +600,18 @@ body {
   color: #000000;
 }
 
+.footer-link:hover,
+.footer-link:hover .academy,
+.footer-link:focus-visible,
+.footer-link:focus-visible .academy {
+  color: #756157;
+}
+
+.footer-link:active,
+.footer-link:active .academy {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .modal-container {
   position: fixed;
   top: 0;
