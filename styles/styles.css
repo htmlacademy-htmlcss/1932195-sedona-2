@@ -1048,6 +1048,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  gap: 8px;
 }
 
 .show-item {
@@ -1055,8 +1056,36 @@ body {
 }
 
 .cards-button {
-  min-width: 48px;
-  min-height: 48px;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  outline: none;
+}
+
+.button-select,
+.cards-button:hover,
+.cards-button:active {
+  border: 2px solid #000000;
+}
+
+.cards-button:focus-visible {
+  border: 2px solid #68a2ca;
+}
+
+.view-table {
+  background-image: url("../images/catalog/view-table.svg");
+}
+
+.view-slideshow {
+  background-image: url("../images/catalog/view-slideshow.svg");
+}
+
+.view-list {
+  background-image: url("../images/catalog/view-list.svg");
 }
 
 .hotel-list {
