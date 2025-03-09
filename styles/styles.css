@@ -901,119 +901,55 @@ body {
 
 .input-number:focus-visible {
   background-color: #e5e5e5;
-  /* border: 3px solid #83b3d3; */
   outline: 3px solid #83b3d3;
 }
 
-.range-slider {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-  height: 4px;
-}
-
-input[type="range"] {
-  margin: 0;
-  -webkit-appearance: none;
+.range-scale {
   position: relative;
-  overflow: hidden;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #61666c;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
   height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
   cursor: pointer;
-  background-color: transparent;
-  outline: none;
-  width: 81px;
-}
-
-.range-from::-webkit-slider-runnable-track {
-  background: #ffffff;
-  height: 4px;
-  margin-right: 10px;
-  padding: 0;
-  outline: none;
-}
-
-.range-to::-webkit-slider-runnable-track {
-  margin: 0;
-  -webkit-appearance: none;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  background: #61666c;
-  height: 4px;
-}
-
-::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #ffffff;
-  border-radius: 5px;
-  -webkit-appearance: none;
-  appearance: none;
-  margin-top: -8px;
-}
-
-.range-from::-moz-range-track {
-  background: #ffffff;
-  height: 4px;
-  margin-right: 10px;
-  padding: 0;
-  outline: none;
-}
-
-.range-to::-moz-range-track {
-  margin: 0;
-  -webkit-appearance: none;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  background: #61666c;
-  height: 4px;
-}
-
-::-moz-range-track {
-  height: 4px;
-  background: #61666c;
-}
-
-::-moz-range-thumb {
-  background: #fff;
-  height: 20px;
-  width: 20px;
-  border-radius: 5px;
   border: none;
 }
 
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
 
+.range-toggle:focus-visible {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
 
-/* ::-ms-thumb {
-  background: #fff;
-  height: 20px;
-  width: 20px;
-  border-radius: 5px;
-  margin-top: -12px;
-} */
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
 
-/* ::-ms-ticks-after {
-  display: none;
-} */
+.toggle-min {
+  top: -8px;
+  left: -220px;
+}
 
-/* ::-ms-ticks-before {
-  display: none;
-} */
-
-/* ::-ms-track {
-  background: #61666c;
-  color: transparent;
-  height: 4px;
-  border: none;
-} */
-
-/* ::-ms-tooltip {
-  display: none;
-} */
-
+.toggle-max {
+  top: -8px;
+  right: 60px;
+}
 
 .button-submit {
   padding-left: 50px;
