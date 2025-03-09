@@ -159,7 +159,7 @@
             <button class="button button-basic button-big button-search" type="button">Поиск гостиницы в Седоне</button>
           </div>
         </section>
-        <section class="subscription subscription-main-img">
+        <section class="subscription subscription-main-image">
           <div class="padding-container">
             <h2 class="text-title text-title-background">Подпишитесь на рассылку</h2>
             <p class="text-description text-description-background text-description-margin">Только полезная информация и
@@ -167,8 +167,8 @@
               спама,<br>честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
               <label for="newsletter-email"></label>
-              <input class="field" placeholder="Ваш e-mail" type="email" id="newsletter-email" name="newsletter-email"
-                required>
+              <input class="newsletter-field input-text" placeholder="Ваш e-mail" type="email" id="newsletter-email"
+                name="newsletter-email" required>
               <button class="button button-big newsletter-button button-second" type="submit">Подписаться</button>
             </form>
           </div>
@@ -276,15 +276,31 @@
         <section class="modal-content">
           <h2 class="text-title modal-title">Поиск гостиницы в Седоне</h2>
           <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="booking-date">
             <label for="check-in">
               <h4 class="heading-4">Дата заезда:</h4>
             </label>
-            <input class="form-control is-invalid" type="text" id="check-in" aria-describedby="validation" required>
-            <div class="invalid-feedback" id="validation">Мы не можем отправить вас в прошлое.</div>
+            <div>
+            <input class="form-control is-invalid input-text input-date" type="text" id="check-in" name="in"
+              aria-describedby="validation" value="27 апреля 2020" required>
+            <span class="invalid-feedback feedback" id="validation">Мы не можем отправить вас в прошлое.</span>
+          </div>
             <label for="check-out">
               <h4 class="heading-4">Дата выезда:</h4>
             </label>
-            <input class="" type="text" id="check-out" required>
+            <div>
+            <input class="form-control is-valid input-text input-date" type="text" id="check-out" name="out"
+              aria-describedby="validation" value="1 сентября 2023" required>
+            <span class="valid-feedback feedback" id="validation">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+        </div>
+          <div class="quantity">
+            <label class="heading-4" for="adults">Взрослые:</label>
+            <input type="text" id="adults" name="adult">
+            <label class="heading-4" for="children">Дети:</label>
+            <input type="text" id="children" name="child">
+          </div>
+            <button class="button button-modal" type="submit">Найти</button>
           </form>
         </section>
       </div>
