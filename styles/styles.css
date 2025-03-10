@@ -652,7 +652,7 @@ body {
 
 .modal-lable {
   display: flex;
-  padding-top: 12px;
+  margin-top: 12px;
   /* position: relative; */
 }
 
@@ -708,12 +708,12 @@ body {
   font-weight: 700;
   text-align: center;
   width: 31px;
-  /* height: 100%; */
   margin: 0;
   padding: 0;
   border: none;
   background-color: #f2f2f2;
   outline: none;
+  -moz-appearance: textfield;
 }
 
 .quantity-input::-webkit-inner-spin-button,
@@ -724,9 +724,9 @@ body {
 
 .button-minus-plus {
   width: 40px;
-  /* height: 100%; */
   border: none;
   padding: 0;
+  background-color: #f2f2f2;
 }
 
 .button-minus {
@@ -741,6 +741,79 @@ body {
   background-image: url("../images/icons/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.quantity-group-children {
+  width: 242px;
+  justify-content: space-between;
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 59px;
+  /* width: 24px;
+  height: 24px; */
+}
+
+.tooltip-toggle {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  background-color: #83b3d3;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tooltip-icon {
+  /* width: 100%;
+  height: 100%; */
+  color: #ffffff;
+  /* display: block; */
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  min-height: 152px;
+  position: absolute;
+  /* bottom: 100%;
+  margin-bottom: 6px; */
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  /* display: none; */
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/icons/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .button-modal {
