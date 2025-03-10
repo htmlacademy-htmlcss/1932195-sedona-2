@@ -626,6 +626,8 @@ body {
 
 }
 
+.button-left {}
+
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -648,24 +650,32 @@ body {
   max-width: 540px;
 }
 
+.modal-lable {
+  display: flex;
+  padding-top: 12px;
+  /* position: relative; */
+}
+
 .booking-date {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 1fr 440px;
 }
 
 .input-date {
   font-weight: 700;
   border-radius: 4px;
   padding: 12px 20px;
-  max-width: 440px;
+  width: 440px;
   background-color: #f2f2f2;
   border: none;
 }
 
 .feedback {
+  display: flex;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
+  padding: 4px 20px 23px;
 }
 
 .invalid-feedback {
@@ -673,8 +683,64 @@ body {
   color: #ff5757;
 }
 
+.people {
+  display: flex;
+  gap: 88px;
+  height: 48px;
+}
+
+.quantity-group {
+  display: flex;
+  gap: 46px;
+}
+
 .quantity {
-  /* grid-column: 3 / -3; */
+  display: flex;
+  border-radius: 4px;
+  width: 110px;
+  background-color: #f2f2f2;
+}
+
+.quantity-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 31px;
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-minus-plus {
+  width: 40px;
+  /* height: 100%; */
+  border: none;
+  padding: 0;
+}
+
+.button-minus {
+  border-radius: 4px 0 0 4px;
+  background-image: url("../images/icons/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-plus {
+  border-radius: 0 4px 4px 0;
+  background-image: url("../images/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-modal {
@@ -741,6 +807,7 @@ body {
 
 .catalog-filter-title {
   padding: 0;
+  margin-bottom: 32px;
 }
 
 .heading-4 {
@@ -749,7 +816,6 @@ body {
   text-transform: capitalize;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 32px;
 }
 
 .control {
@@ -845,9 +911,6 @@ body {
 
 .input-group {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
   gap: 2px;
   width: 288px;
   height: 48px;

@@ -217,7 +217,8 @@
             <a class="footer-link contact-phone" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
           </address>
           <div class="partner-link">
-            <a class="footer-link" href="https://htmlacademy.ru" target="_blank" rel="noreferrer noopener" aria-label="htmlacademy">
+            <a class="footer-link" href="https://htmlacademy.ru" target="_blank" rel="noreferrer noopener"
+              aria-label="htmlacademy">
               <svg class="academy" width="115" height="34" role="img" aria-label="Логотип разработчика HTML Academy"
                 viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_33515_1190)">
@@ -277,29 +278,46 @@
           <h2 class="text-title modal-title">Поиск гостиницы в Седоне</h2>
           <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="booking-date">
-            <label for="check-in">
-              <h4 class="heading-4">Дата заезда:</h4>
-            </label>
-            <div>
-            <input class="form-control is-invalid input-text input-date" type="text" id="check-in" name="in"
-              aria-describedby="validation" value="27 апреля 2020" required>
-            <span class="invalid-feedback feedback" id="validation">Мы не можем отправить вас в прошлое.</span>
-          </div>
-            <label for="check-out">
-              <h4 class="heading-4">Дата выезда:</h4>
-            </label>
-            <div>
-            <input class="form-control is-valid input-text input-date" type="text" id="check-out" name="out"
-              aria-describedby="validation" value="1 сентября 2023" required>
-            <span class="valid-feedback feedback" id="validation">На эти даты есть свободные номера. Пока есть.</span>
-          </div>
-        </div>
-          <div class="quantity">
-            <label class="heading-4" for="adults">Взрослые:</label>
-            <input type="text" id="adults" name="adult">
-            <label class="heading-4" for="children">Дети:</label>
-            <input type="text" id="children" name="child">
-          </div>
+              <h4 class="heading-4">
+                <label class="modal-lable" for="check-in">Дата заезда:</label>
+              </h4>
+              <div>
+                <input class="form-control is-invalid input-text input-date" type="text" id="check-in" name="in"
+                  aria-describedby="invalid" value="27 апреля 2020" required>
+                <span class="invalid-feedback feedback" id="invalid">Мы не можем отправить вас в прошлое.</span>
+              </div>
+              <h4 class="heading-4">
+                <label class="modal-lable" for="check-out">Дата выезда:</label>
+              </h4>
+              <div>
+                <input class="form-control is-valid input-text input-date" type="text" id="check-out" name="out"
+                  aria-describedby="valid" value="1 сентября 2023" required>
+                <span class="valid-feedback feedback" id="valid">На эти даты есть свободные номера. Пока
+                  есть.</span>
+              </div>
+            </div>
+            <div class="people">
+              <div class="quantity-group">
+                <h4 class="heading-4">
+                  <label class="modal-lable" for="adults">Взрослые:</label>
+                </h4>
+                <div class="quantity">
+                  <button class="button-minus-plus button-minus" type="button"></button>
+                  <input class="quantity-input" type="number" value="2" id="adults" name="adult" placeholder="0">
+                  <button class="button-minus-plus button-plus" type="button"></button>
+                </div>
+              </div>
+              <div class="quantity-group">
+                <h4 class="heading-4">
+                  <label class="modal-lable" for="adults">Дети:</label>
+                </h4>
+                <div class="quantity">
+                  <button class="button-minus-plus button-minus" type="button"></button>
+                  <input class="quantity-input" type="number" value="2" id="adults" name="adult" placeholder="0">
+                  <button class="button-minus-plus button-plus" type="button"></button>
+                </div>
+              </div>
+            </div>
             <button class="button button-modal" type="submit">Найти</button>
           </form>
         </section>
