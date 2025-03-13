@@ -56,7 +56,7 @@ body {
   box-sizing: border-box;
   appearance: none;
   transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-  outline: none;
+  /* outline: none; */
 }
 
 .button:disabled {
@@ -683,9 +683,10 @@ body {
 }
 
 .people {
-  display: flex;
+  display: grid;
+  grid-template-columns: 247px 242px;
   gap: 88px;
-  height: 48px;
+  min-height: 48px;
 }
 
 .quantity-group {
@@ -839,7 +840,7 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
   padding-top: 35px;
-  min-height: 412px;
+  padding-bottom: 55px;
 }
 
 .inner-header {
@@ -919,22 +920,22 @@ body {
 }
 
 .catalog-filter-item {
+  display: flex;
   margin-bottom: 16px;
-  height: 23px;
 }
 
 .catalog-filter-title {
   padding: 0;
-  margin-bottom: 24px;
-}
-
-.catalog-filter-title-housing {
-  margin-bottom: 23px;
-}
-
-.catalog-filter-title-price {
   margin-bottom: 32px;
 }
+
+/* .catalog-filter-title-housing {
+  margin-bottom: 30px;
+} */
+
+/* .catalog-filter-title-price {
+  margin-bottom: 32px;
+} */
 
 .heading-4 {
   font-size: 20px;
@@ -1007,6 +1008,12 @@ body {
   position: absolute;
   z-index: -1;
   opacity: 0;
+}
+
+.custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
 }
 
 /* создание в label псевдоэлемента  before со следующими стилями */
@@ -1138,7 +1145,7 @@ body {
 .button-submit {
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   margin-top: 56px;
 }
 
@@ -1233,6 +1240,7 @@ body {
   border: 2px solid #000000;
 }
 
+.button-select:focus-visible,
 .cards-button:focus-visible {
   border: 2px solid #68a2ca;
 }
@@ -1416,6 +1424,7 @@ body {
 
 .pagination-current {
   background-color: #f2f2f2;
+  color: #000000;
 }
 
 .ellipsis {
