@@ -36,6 +36,7 @@ body {
   background-color: #f2f2f2;
   text-decoration: none;
   margin: 0;
+  min-width: 1280px;
 }
 
 .button {
@@ -160,8 +161,8 @@ body {
   position: relative;
 }
 
-.navigation-link-current:before {
-  content: '';
+.navigation-link-current::before {
+  content: "";
   background-color: #756257;
   position: absolute;
   left: 16px;
@@ -357,10 +358,9 @@ body {
 }
 
 .advantages-title::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -30px;
-  left: 0;
   right: 0;
   width: 60px;
   border-top: 2px solid rgba(0, 0, 0, 0.3);
@@ -368,7 +368,7 @@ body {
   margin-left: -30px;
 }
 
-.advantages-title-corner:before {
+.advantages-title-corner::before {
   border-top: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -795,7 +795,6 @@ body {
   text-transform: none;
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
-  display: block;
   width: 256px;
   min-height: 152px;
   position: absolute;
@@ -803,11 +802,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  display: none;
 }
 
-.tooltip-text:after {
-  content: '';
+.tooltip-text::after {
+  content: "";
   background-image: url("../images/icons/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
@@ -832,6 +830,15 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin-top: 48px;
+}
+
+.button-modal:hover,
+.button-modal:focus-visible {
+  background-color: #68a2ca;
+}
+
+.button-modal:active {
+  background-color: #68a2ca;
 }
 
 .hotel-search {
@@ -863,6 +870,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link-image {
@@ -956,7 +964,7 @@ body {
 }
 
 .custom-checkbox + label::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1014,7 +1022,7 @@ body {
 
 /* создание в label псевдоэлемента  before со следующими стилями */
 .custom-radio + label::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1104,12 +1112,12 @@ body {
   height: 20px;
 }
 
-.range:before {
+.range::before {
   width: 226px;
 }
 
-.range::before, .range:after {
-  content: '';
+.range::before, .range::after {
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -1118,7 +1126,7 @@ body {
   background-color: #fff;
 }
 
-.range:after {
+.range::after {
   width: 61px;
   left: 226px;
   opacity: .3;
