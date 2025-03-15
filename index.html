@@ -38,7 +38,6 @@
               <li class="navigation-user-item navigation-user-margin">
                 <a class="navigation-link navigation-user-link navigation-user-link-favorite" href="#">
                   <span class="visually-hidden">Избранное</span>
-                  <span class="visually-hidden">Количество выбранных отелей:</span>
                   <span class="likes-number">12</span>
                 </a>
               </li>
@@ -278,17 +277,13 @@
           <h2 class="text-title modal-title">Поиск гостиницы в Седоне</h2>
           <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="booking-date">
-              <h4 class="heading-4">
-                <label class="modal-lable" for="check-in">Дата заезда:</label>
-              </h4>
+              <label class="modal-lable heading-4" for="check-in">Дата заезда:</label>
               <div>
                 <input class="form-control is-invalid input-text input-date" type="text" id="check-in" name="in"
                   aria-describedby="invalid" value="27 апреля 2020" required>
                 <span class="invalid-feedback feedback" id="invalid">Мы не можем отправить вас в прошлое.</span>
               </div>
-              <h4 class="heading-4">
-                <label class="modal-lable" for="check-out">Дата выезда:</label>
-              </h4>
+              <label class="modal-lable heading-4" for="check-out">Дата выезда:</label>
               <div>
                 <input class="form-control is-valid input-text input-date" type="text" id="check-out" name="out"
                   aria-describedby="valid" value="1 сентября 2023" required>
@@ -298,9 +293,7 @@
             </div>
             <div class="people">
               <div class="quantity-group">
-                <h4 class="heading-4">
-                  <label class="modal-lable" for="adults">Взрослые:</label>
-                </h4>
+                <label class="modal-lable heading-4" for="adults">Взрослые:</label>
                 <div class="quantity">
                   <button class="button-minus-plus button-minus" type="button">
                     <svg class="button-quantity-icon" width="20" height="20" viewBox="0 0 20 20"
@@ -318,22 +311,20 @@
                 </div>
               </div>
               <div class="quantity-group quantity-group-children">
-                <h4 class="heading-4">
-                  <span class="tooltip-lable">
-                    <label class="modal-lable tooltip-lable" for="children">Дети:</label>
-                    <span class="tooltip">
-                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
-                        <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
-                        </svg>
-                      </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
-                        которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
-                        бесплатно.</span>
-                    </span>
+                <span class="tooltip-lable">
+                  <label class="modal-lable heading-4 tooltip-lable" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                      <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                      которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
+                      бесплатно.</span>
                   </span>
-                </h4>
+                </span>
                 <div class="quantity">
                   <button class="button-minus-plus button-minus" type="button">
                     <svg class="button-quantity-icon" width="20" height="20" viewBox="0 0 20 20"
